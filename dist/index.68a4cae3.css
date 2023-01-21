@@ -173,4 +173,45 @@
   padding-top: 19px;
 }
 
+.achievements {
+  height: 262px;
+  background: url("blue-line.641f955a.png");
+  margin-top: 140px;
+}
+
+.achievements__container {
+  grid-template-columns: repeat(4, auto);
+  padding: 52px 0;
+  display: grid;
+}
+
+.achievements__card {
+  text-align: center;
+}
+
+.achievements__number {
+  color: #fff;
+  padding: 12px 0;
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+.achievements__text {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.achievements__text:after {
+  content: "";
+  width: 68px;
+  height: 1px;
+  background-color: #fff;
+  margin: 12px auto 0;
+  display: block;
+}
+
 /*# sourceMappingURL=index.68a4cae3.css.map */
