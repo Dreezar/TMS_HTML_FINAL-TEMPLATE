@@ -1,0 +1,41 @@
+.subheader {
+    padding-top: 30px;
+    &__container {
+        display: grid;
+        grid-template-columns: 59% auto;
+        grid-column-gap: 3%;
+    }
+    &__text-block {
+        margin-top: 90px;
+    }
+    &__welcome-text {
+        font-family: 'Poppins-Regular', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: $main-color;
+    }
+    &__title {
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: 80px;
+        line-height: 96px;
+        text-transform: capitalize;
+        color: $heading-color;
+        margin: 35px 0 25px;
+    }
+    &__button {
+        font-family: 'OpenSans-Bold', sans-serif;
+        font-size: 16px;
+        font-family: 24px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #F5F5F5;
+        background-color: $main-color;
+    }
+    &__img {
+        width: 468px;
+        height: 411px;
+        margin-top: 67px;
+    }
+}
