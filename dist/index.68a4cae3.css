@@ -57,6 +57,58 @@
   margin: auto;
 }
 
+.reasons__text-block__fake-button, .about__text-block__fake-button {
+  text-transform: capitalize;
+  color: #355efc;
+  height: 42px;
+  text-align: center;
+  cursor: default;
+  border: 1px solid #cad2fc;
+  border-radius: 11px;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 42px;
+  box-shadow: 0 0 4px #0000005c;
+}
+
+.reasons__text-block__button, .subheader__text-block__button {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 16px;
+  font-family: 24px;
+  cursor: pointer;
+  color: #f5f5f5;
+  background-color: #355efc;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.reasons__card-white__card-title, .reasons__card-blue__card-title {
+  text-transform: capitalize;
+  color: #fff;
+  padding: 18px 0;
+  font-family: Jost-Bold, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.reasons__card-white__card-main-text, .reasons__card-blue__card-main-text {
+  color: #555;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.reasons__card-white__link, .reasons__card-blue__link {
+  text-transform: capitalize;
+  padding-top: 18px;
+  font-family: Poppins-regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  display: block;
+}
+
 .header {
   padding-top: 30px;
 }
@@ -73,7 +125,7 @@
   display: grid;
 }
 
-.header__link {
+.header__navigation__link {
   text-transform: capitalize;
   color: #355efc;
   font-family: Poppins-Bold, sans-serif;
@@ -96,32 +148,20 @@
   margin-top: 90px;
 }
 
-.subheader__welcome-text {
+.subheader__text-block__welcome-text {
   color: #355efc;
   font-family: Poppins-Regular, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
-.subheader__title {
+.subheader__text-block__title {
   text-transform: capitalize;
   color: #011a41;
   margin: 35px 0 25px;
   font-family: OpenSans-Bold, sans-serif;
   font-size: 80px;
   line-height: 96px;
-}
-
-.subheader__button {
-  font-family: OpenSans-Bold, sans-serif;
-  font-size: 16px;
-  font-family: 24px;
-  cursor: pointer;
-  color: #f5f5f5;
-  background-color: #355efc;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 25px;
 }
 
 .subheader__img {
@@ -131,7 +171,7 @@
 }
 
 .about {
-  padding-top: 77px;
+  padding-top: 140px;
 }
 
 .about__container {
@@ -140,36 +180,27 @@
   display: grid;
 }
 
-.about__fake-button {
-  text-transform: capitalize;
-  color: #355efc;
+.about__text-block__fake-button {
   width: 99px;
-  height: 42px;
-  text-align: center;
-  cursor: default;
-  border: 1px solid #cad2fc;
-  border-radius: 11px;
-  font-family: Poppins-Regular, sans-serif;
-  font-size: 16px;
-  line-height: 42px;
-  box-shadow: 0 0 4px #0000005c;
 }
 
-.about__title {
+.about__text-block__title {
   text-transform: capitalize;
+  color: #011a41;
   padding: 19px 0;
   font-family: Jost-Bold, sans-serif;
   font-size: 48px;
   line-height: 58px;
 }
 
-.about__main-text {
+.about__text-block__main-text {
+  color: #555;
   font-family: Poppins-Regular, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
-.about__main-text:last-child {
+.about__text-block__main-text:last-child {
   padding-top: 19px;
 }
 
@@ -189,7 +220,7 @@
   text-align: center;
 }
 
-.achievements__number {
+.achievements__card__number {
   color: #fff;
   padding: 12px 0;
   font-family: Poppins-Bold, sans-serif;
@@ -197,7 +228,7 @@
   line-height: 67px;
 }
 
-.achievements__text {
+.achievements__card__text {
   color: #fff;
   text-transform: capitalize;
   font-family: Poppins-Regular, sans-serif;
@@ -205,13 +236,98 @@
   line-height: 24px;
 }
 
-.achievements__text:after {
+.achievements__card__text:after {
   content: "";
   width: 68px;
   height: 1px;
   background-color: #fff;
   margin: 12px auto 0;
   display: block;
+}
+
+.reasons {
+  margin-top: 133px;
+}
+
+.reasons__container {
+  grid-column-gap: 3.5%;
+  grid-template-columns: auto auto;
+  display: grid;
+}
+
+.reasons__text-block__fake-button {
+  width: 164px;
+}
+
+.reasons__text-block__title {
+  text-transform: capitalize;
+  color: #011a41;
+  padding: 19px 0;
+  font-family: Jost-Bold, sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.reasons__text-block__main-text {
+  color: #555;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.reasons__text-block__button {
+  margin: 20px 0;
+}
+
+.reasons__card-wrapper {
+  grid-column-gap: 2.5%;
+  grid-template-columns: repeat(2, auto);
+  display: grid;
+}
+
+.reasons__card-blue {
+  width: 265px;
+  height: 262px;
+  background-color: #355efc;
+  border: 1px solid #909de2;
+  border-radius: 15px;
+  align-self: flex-end;
+  padding: 20px 20px 31px;
+}
+
+.reasons__card-blue__card-main-text, .reasons__card-blue__link {
+  color: #fff;
+}
+
+.reasons__card-blue__link:after {
+  content: url("arrow-back-white-icon.a5be1921.svg");
+  vertical-align: middle;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.reasons__card-white {
+  width: 265px;
+  height: 262px;
+  background-color: #fff;
+  border: 1px solid #909de2;
+  border-radius: 15px;
+  padding: 20px 20px 31px;
+}
+
+.reasons__card-white__card-title {
+  color: #011a41;
+}
+
+.reasons__card-white__link {
+  color: #355efc;
+}
+
+.reasons__card-white__link:after {
+  content: url("arrow-back-blue-icon.fbf02ff9.svg");
+  vertical-align: middle;
+  margin-left: 15px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=index.68a4cae3.css.map */

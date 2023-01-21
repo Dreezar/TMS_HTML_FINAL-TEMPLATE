@@ -1,0 +1,88 @@
+.reasons {
+    margin-top: 133px;
+    &__container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 3.5%;
+    }
+    &__text-block {
+        &__fake-button {
+            @extend %fake-button;
+            width: 164px;
+        }
+        &__title {
+            font-family: 'Jost-Bold', sans-serif;
+            font-size: 48px;
+            line-height: 58px;
+            text-transform: capitalize;
+            padding: 19px 0;
+            color: $heading-color;
+        }
+        &__main-text {
+            font-family: 'Poppins-Regular', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: $small-text-color;
+        }
+        &__button {
+            @extend %explore-more-button;
+            margin: 20px 0;
+        }
+    }
+    &__card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 2.5%;
+    }
+    &__card-blue {
+        background-color: $main-color;
+        width: 265px;
+        height: 262px;
+        border: 1px solid #909DE2;
+        border-radius: 15px;
+        padding: 20px 20px 31px 20px;
+        align-self: flex-end;
+        &__card-title {
+            @extend %reasons-card-title;
+        }
+        &__card-main-text {
+            @extend %small-main-text;
+            color: #FFFFFF;
+        }
+        &__link {
+            @extend %read-more-link;
+            color: #FFFFFF;
+            &::after {
+                content: url(../images/icons/arrow-back-white-icon.svg);
+                display: inline-block;
+                margin-left: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+    &__card-white {
+        background-color: #FFFFFF;
+        width: 265px;
+        height: 262px;
+        border: 1px solid #909DE2;
+        border-radius: 15px;
+        padding: 20px 20px 31px 20px;
+        &__card-title {
+            @extend %reasons-card-title;
+            color: $heading-color;
+        }
+        &__card-main-text {
+            @extend %small-main-text;
+        }
+        &__link {
+            @extend %read-more-link;
+            color: $main-color;
+            &::after {
+                content: url(../images/icons/arrow-back-blue-icon.svg);
+                display: inline-block;
+                margin-left: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
