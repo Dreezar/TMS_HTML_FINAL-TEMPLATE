@@ -1,0 +1,12 @@
+.header {
+    padding-top: 20px;
+    &__container {
+        display: grid;
+        grid-template-columns: 167px 35%;
+        grid-column-gap: 42%;
+    }
+    a {
+        text-decoration: none;
+        color: $main-color;
+    }
+}

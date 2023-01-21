@@ -1,3 +1,75 @@
+@font-face {
+  font-family: Jost-Regular;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("Jost-Regular.e7a4bfbb.woff2") format("woff2");
+}
 
+@font-face {
+  font-family: Jost-Bold;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("Jost-Bold.e9c5ed86.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("OpenSans-Regular.2b33c5d0.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("OpenSans-Bold.c9e4abcc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("Poppins-Regular.001f7b6d.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("Poppins-Bold.ab60741e.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: min(100% - 30px, 1240px);
+  margin: auto;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.header__container {
+  grid-column-gap: 42%;
+  grid-template-columns: 167px 35%;
+  display: grid;
+}
+
+.header a {
+  color: #355efc;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=index.68a4cae3.css.map */
