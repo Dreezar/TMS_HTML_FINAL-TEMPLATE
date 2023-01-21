@@ -53,22 +53,32 @@
 }
 
 .container {
-  width: min(100% - 30px, 1240px);
+  width: min(100% - 60px, 1240px);
   margin: auto;
 }
 
 .header {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .header__container {
-  grid-column-gap: 42%;
+  grid-column-gap: 51.5%;
   grid-template-columns: 167px 35%;
   display: grid;
 }
 
-.header a {
+.header__navigation {
+  text-align: center;
+  grid-template-columns: repeat(5, auto);
+  display: grid;
+}
+
+.header__link {
+  text-transform: capitalize;
   color: #355efc;
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 35px;
   text-decoration: none;
 }
 
