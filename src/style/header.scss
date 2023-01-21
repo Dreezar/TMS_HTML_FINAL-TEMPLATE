@@ -1,0 +1,21 @@
+.header {
+    padding-top: 30px;
+    &__container {
+        display: grid;
+        grid-template-columns: 167px 35%;
+        grid-column-gap: 51.5%;
+    }
+    &__navigation {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        text-align: center;
+    }
+    &__link {
+        font-family: 'Poppins-Bold', sans-serif;
+        font-size: 16px;
+        line-height: 35px; //the same as the height of logo
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $main-color;
+    }
+}
