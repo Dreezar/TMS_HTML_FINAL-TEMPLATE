@@ -1,0 +1,23 @@
+{
+    "name": "finanza",
+    "version": "1.0.0",
+    "description": "**Author**: Uladzislau Razhko",
+    "dependencies": {
+        "parcel": "^2.8.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "dev": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Dreezar/TMS_HTML_FINAL-TEMPLATE.git"
+    },
+    "author": "Uladzislau Razhko",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Dreezar/TMS_HTML_FINAL-TEMPLATE/issues"
+    },
+    "homepage": "https://github.com/Dreezar/TMS_HTML_FINAL-TEMPLATE#readme"
+}
