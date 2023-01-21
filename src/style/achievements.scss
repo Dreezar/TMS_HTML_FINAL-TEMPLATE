@@ -1,0 +1,35 @@
+.achievements {
+    background: url(../images/blue-line.png);
+    margin-top: 140px;
+    height: 262px;
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        padding: 52px 0;
+    }
+    &__card {
+        text-align: center;
+    }
+    &__number {
+        font-family: 'Poppins-Bold', sans-serif;
+        font-size: 56px;
+        line-height: 67px;
+        padding: 12px 0;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-family: 'Poppins-Regular', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        &::after {
+            content: "";
+            display: block;
+            width: 68px;
+            height: 1px;
+            background-color: #FFFFFF;
+            margin: 12px auto 0;
+        }
+    }
+}
