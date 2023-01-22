@@ -21,6 +21,7 @@
             grid-column-gap: 16px;
             &__item {
                 position: relative;
+                margin-bottom: 69px;
                 &__icon-wrapper {
                     position: absolute;
                     top: -20px;
@@ -50,9 +51,6 @@
                 }
                 &__person {
                     margin-top: 30px;
-                    &__photo {
-                        //
-                    }
                     &__name {
                         font-family: 'Jost-Bold', sans-serif;
                         font-size: 20px;
