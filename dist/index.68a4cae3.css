@@ -57,12 +57,13 @@
   margin: auto;
 }
 
-.reasons__text-block__fake-button, .about__text-block__fake-button {
+.services__fake-button, .reasons__text-block__fake-button, .about__text-block__fake-button {
   text-transform: capitalize;
   color: #355efc;
   height: 42px;
   text-align: center;
   cursor: default;
+  background-color: #fff;
   border: 1px solid #cad2fc;
   border-radius: 11px;
   font-family: Poppins-Regular, sans-serif;
@@ -71,7 +72,7 @@
   box-shadow: 0 0 4px #0000005c;
 }
 
-.reasons__text-block__button, .subheader__text-block__button {
+.services__content-wrapper__text-block__button, .reasons__text-block__button, .subheader__text-block__button {
   font-family: OpenSans-Bold, sans-serif;
   font-size: 16px;
   font-family: 24px;
@@ -328,6 +329,77 @@
   vertical-align: middle;
   margin-left: 15px;
   display: inline-block;
+}
+
+.services {
+  margin-top: 140px;
+}
+
+.services__fake-button {
+  width: 142px;
+  margin-left: 44%;
+}
+
+.services__title {
+  text-transform: capitalize;
+  color: #011a41;
+  max-width: 542px;
+  text-align: center;
+  margin: 22px auto 54px;
+  padding: 19px 0;
+  font-family: Jost-Bold, sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.services__content-wrapper {
+  grid-column-gap: 8%;
+  grid-template-columns: repeat(2, auto);
+  margin: auto;
+  display: grid;
+}
+
+.services__content-wrapper__img {
+  max-width: 100%;
+  justify-self: end;
+}
+
+.services__content-wrapper__text-block {
+  max-width: 385px;
+}
+
+.services__content-wrapper__text-block__title {
+  color: #011a41;
+  font-family: Jost-Bold, sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.services__content-wrapper__text-block__main-text {
+  color: #555;
+  margin: 32px 0;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services__content-wrapper__text-block__info-wrapper {
+  grid-row-gap: 17px;
+  display: grid;
+}
+
+.services__content-wrapper__text-block__info-wrapper__item {
+  color: #555;
+  text-transform: capitalize;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services__content-wrapper__text-block__button {
+  text-transform: capitalize;
+  width: 136px;
+  margin-top: 32px;
 }
 
 /*# sourceMappingURL=index.68a4cae3.css.map */
