@@ -82,3 +82,17 @@ $small-text-color: #555555;
     text-transform: capitalize;
     padding-top: 18px;
 }
+
+%Jost-Regular {
+    font-family: 'Jost-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+%OpenSans-Regular {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}

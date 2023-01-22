@@ -72,7 +72,7 @@
   box-shadow: 0 0 4px #0000005c;
 }
 
-.subfooter__email-button, .feedback__form__button, .services__content-wrapper__text-block__button, .reasons__text-block__button, .subheader__text-block__button {
+.feedback__form__button, .services__content-wrapper__text-block__button, .reasons__text-block__button, .subheader__text-block__button {
   font-family: OpenSans-Bold, sans-serif;
   font-size: 16px;
   font-family: 24px;
@@ -122,20 +122,6 @@
   line-height: 24px;
   text-decoration: none;
   display: block;
-}
-
-.subfooter__container__block__block-email, .subfooter__container__block__block-phone, .subfooter__container__block__block-address {
-  text-transform: capitalize;
-  font-family: Jost-Regular, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.subfooter #subfooter-email-input {
-  text-transform: capitalize;
-  font-family: OpenSans-Regular, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .header {
@@ -659,62 +645,7 @@
 }
 
 .subfooter {
-  color: #fff;
   background-color: #011a41;
-  padding: 57px 0 32px;
-}
-
-.subfooter__container {
-  grid-column-gap: 15px;
-  grid-template-columns: repeat(4, 21%);
-  justify-content: center;
-  display: grid;
-}
-
-.subfooter__container__block {
-  row-gap: 11px;
-  display: grid;
-  position: relative;
-}
-
-.subfooter__container__block__block-title {
-  text-transform: capitalize;
-  font-family: Jost-Bold, sans-serif;
-  font-size: 24px;
-  line-height: 29px;
-}
-
-.subfooter__container__block__block-address img, .subfooter__container__block__block-phone img, .subfooter__container__block__block-email img {
-  padding-right: 5px;
-}
-
-.subfooter__container__block__block-item {
-  text-transform: capitalize;
-  font-family: OpenSans-Regular, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.subfooter__container__block__block-item img {
-  padding-right: 5px;
-}
-
-.subfooter #subfooter-email-input {
-  border-radius: 5px;
-}
-
-.subfooter #subfooter-email-input::placeholder {
-  text-transform: capitalize;
-  padding-left: 5px;
-}
-
-.subfooter__email-button {
-  height: 39px;
-  width: 97px;
-  text-align: center;
-  position: absolute;
-  bottom: 30px;
-  right: 2px;
 }
 
 /*# sourceMappingURL=index.68a4cae3.css.map */
