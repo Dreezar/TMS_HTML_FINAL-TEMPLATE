@@ -1,0 +1,74 @@
+.testimonial {
+    margin-top: 140px;
+    text-align: center;
+    &__container {
+        &__fake-button {
+            @extend %fake-button;
+            width: 117px;
+            margin-left: calc((100% - 117px)/2);
+        }
+        &__title {
+            font-family: 'Jost-Bold', sans-serif;
+            font-size: 48px;
+            line-height: 58px;
+            text-transform: capitalize;
+            color: $heading-color;
+            margin: 30px 0 30px;
+        }
+        &__items-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-column-gap: 16px;
+            &__item {
+                position: relative;
+                &__icon-wrapper {
+                    position: absolute;
+                    top: -20px;
+                    left: calc((100% - 46px)/2);
+                    border: 1px solid #909DE2;
+                    border-radius: 50%;
+                    padding: 11px;
+                    width: 46px;
+                    height: 43px;
+                    margin: auto;
+                    z-index: 1;
+                    background-color: #FFFFFF;
+                }
+                &__comment {
+                    font-family: 'Jost-Regular', sans-serif;
+                    font-size: 12px;
+                    line-height: 20px;
+                    border: 1px solid #909DE2;
+                    padding: 32px 15px;
+                    color: $small-text-color;
+                }
+                span {
+                    position: absolute;
+                    top: calc((100% - 173px));
+                    left: calc((100% - 59px)/2);
+                    margin-bottom: 13px;
+                }
+                &__person {
+                    margin-top: 30px;
+                    &__photo {
+                        //
+                    }
+                    &__name {
+                        font-family: 'Jost-Bold', sans-serif;
+                        font-size: 20px;
+                        line-height: 29px;
+                        text-transform: capitalize;
+                        color: $heading-color;
+                    }
+                    &__profession {
+                        font-family: 'Jost-Regular', sans-serif;
+                        font-size: 19px;
+                        line-height: 24px;
+                        text-transform: capitalize;
+                        color: $small-text-color;
+                    }
+                }
+            }
+        }
+    }
+}
