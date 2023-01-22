@@ -50,6 +50,9 @@
                     line-height: 24px;
                     color: $small-text-color;
                     text-transform: capitalize;
+                    img {
+                        margin-right: 10px;
+                    }
                 }
             }
             &__button {
