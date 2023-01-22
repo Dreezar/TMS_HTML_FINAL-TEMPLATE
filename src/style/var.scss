@@ -49,6 +49,23 @@ $small-text-color: #555555;
     color: #FFFFFF;
 }
 
+%inp-set {
+    height: 52px;
+    max-width: 300px;
+    background: #FFFFFF;
+    border: 1px solid #909DE2;
+    border-radius: 10px;
+}
+
+%inp-placeholder {
+     ::placeholder {
+        font-family: 'Open Sans-Regular', sans-serif;
+        font-size: 16px;
+        // line-height: 52px;
+        padding: 14px 0 14px 10px;
+    }
+}
+
 %small-main-text {
     font-family: 'Poppins-Regular', sans-serif;
     font-size: 16px;
