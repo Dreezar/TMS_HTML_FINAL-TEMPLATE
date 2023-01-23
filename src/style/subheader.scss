@@ -23,6 +23,7 @@
         }
         &__button {
             @extend %explore-more-button;
+            @extend %blue-button-hover;
         }
     }
     &__img {

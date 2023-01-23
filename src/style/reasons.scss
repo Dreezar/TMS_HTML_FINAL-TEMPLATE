@@ -1,5 +1,5 @@
 .reasons {
-    margin-top: 133px;
+    @extend %section-margin-top;
     &__container {
         display: grid;
         grid-template-columns: auto auto;
@@ -26,6 +26,7 @@
         }
         &__button {
             @extend %explore-more-button;
+            @extend %blue-button-hover;
             margin: 20px 0;
         }
     }
@@ -47,11 +48,11 @@
         }
         &__card-main-text {
             @extend %small-main-text;
-            color: #FFFFFF;
+            color: $white-color;
         }
         &__link {
             @extend %read-more-link;
-            color: #FFFFFF;
+            color: $white-color;
             &::after {
                 content: url(../images/icons/arrow-back-white-icon.svg);
                 display: inline-block;
@@ -61,7 +62,7 @@
         }
     }
     &__card-white {
-        background-color: #FFFFFF;
+        background-color: $white-color;
         width: 265px;
         height: 262px;
         border: 1px solid #909DE2;

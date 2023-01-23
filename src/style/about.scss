@@ -1,5 +1,5 @@
 .about {
-    padding-top: 140px;
+    @extend %section-margin-top;
     &__container {
         display: grid;
         grid-template-columns: repeat(2, auto);
