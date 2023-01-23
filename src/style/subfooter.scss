@@ -1,6 +1,6 @@
 .subfooter {
     background-color: #011A41;
-    color: #FFFFFF;
+    color: $white-color;
     padding: 57px 0 32px;
     &__container {
         display: grid;
@@ -19,18 +19,24 @@
             }
             &__block-address {
                 @extend %Jost-Regular;
+                color: $white-color;
+                text-decoration: none;
                 img {
                     padding-right: 5px;
                 }
             }
             &__block-phone {
                 @extend %Jost-Regular;
+                color: $white-color;
+                text-decoration: none;
                 img {
                     padding-right: 5px;
                 }
             }
             &__block-email {
                 @extend %Jost-Regular;
+                color: $white-color;
+                text-decoration: none;
                 img {
                     padding-right: 5px;
                 }
@@ -40,6 +46,8 @@
                 font-size: 16px;
                 line-height: 24px;
                 text-transform: capitalize;
+                color: $white-color;
+                text-decoration: none;
                 img {
                     padding-right: 5px;
                 }
@@ -52,15 +60,17 @@
             text-transform: capitalize;
             padding-left: 5px;
         }
+        height: 53px;
         border-radius: 5px;
     }
     &__email-button {
         @extend %explore-more-button;
+        @extend %blue-button-hover;
         position: absolute;
-        height: 39px;
-        width: 97px;
-        bottom: 30px;
-        right: 2px;
+        height: 45px;
+        width: 100px;
+        bottom: 21px;
+        right: 4px;
         text-align: center;
     }
 }

@@ -9,9 +9,11 @@
     margin: auto;
 }
 
+//Colors
 $main-color: #355EFC;
 $heading-color: #011A41;
 $small-text-color: #555555;
+$white-color: #FFFFFF;
 //
 %fake-button {
     font-family: 'Poppins-Regular', sans-serif;
@@ -25,13 +27,12 @@ $small-text-color: #555555;
     height: 42px;
     text-align: center;
     cursor: default;
-    background-color: #FFFFFF;
+    background-color: $white-color;
 }
 
 %explore-more-button {
     font-family: 'OpenSans-Bold', sans-serif;
     font-size: 16px;
-    font-family: 24px;
     padding: 10px 25px;
     border: none;
     border-radius: 10px;
@@ -46,13 +47,13 @@ $small-text-color: #555555;
     line-height: 29px;
     text-transform: capitalize;
     padding: 18px 0;
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 %inp-set {
     height: 52px;
     max-width: 300px;
-    background: #FFFFFF;
+    background: $white-color;
     border: 1px solid #909DE2;
     border-radius: 10px;
 }
@@ -61,16 +62,8 @@ $small-text-color: #555555;
      ::placeholder {
         font-family: 'Open Sans-Regular', sans-serif;
         font-size: 16px;
-        // line-height: 52px;
         padding: 14px 0 14px 10px;
     }
-}
-
-%small-main-text {
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: $small-text-color;
 }
 
 %read-more-link {
@@ -81,6 +74,13 @@ $small-text-color: #555555;
     text-decoration: none;
     text-transform: capitalize;
     padding-top: 18px;
+}
+
+%small-main-text {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $small-text-color;
 }
 
 %Jost-Regular {
@@ -95,4 +95,23 @@ $small-text-color: #555555;
     font-size: 16px;
     line-height: 24px;
     text-transform: capitalize;
+}
+
+%section-margin-top {
+    margin-top: 140px;
+}
+
+%blue-link-hover {
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:focus {
+        color: #949dff;
+    }
+}
+
+%blue-button-hover {
+    &:hover {
+        background-color: #2954ffd9;
+    }
 }

@@ -14,7 +14,7 @@
         left: calc((100% - 719px)/2);
         border: 1px solid #909DE2;
         border-radius: 10px;
-        background-color: #FFFFFF;
+        background-color: $white-color;
         height: 524px;
         width: 719px; //?
         &__container {
@@ -36,32 +36,35 @@
             display: grid;
             grid-template-areas: "name-input email-input" "number-input subject-input";
         }
-        #name {
+        #name-input {
             @extend %inp-set;
             grid-area: name-input;
             margin-bottom: 20px;
         }
-        #number {
+        #phone-input {
             @extend %inp-set;
             grid-area: number-input;
         }
-        #email {
+        #email-input {
             @extend %inp-set;
             grid-area: email-input;
             margin-bottom: 20px;
         }
-        #subject {
+        #subject-input {
             @extend %inp-set;
             grid-area: subject-input;
         }
         #message {
-            background: #FFFFFF;
+            font-family: 'OpenSans-Regular', sans-serif;
+            height: 132px;
+            background: $white-color;
             border: 1px solid #909DE2;
             border-radius: 10px;
             resize: none;
         }
         &__button {
             @extend %explore-more-button;
+            @extend %blue-button-hover;
             height: 49px;
         }
     }

@@ -13,13 +13,13 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <img class="header__logo" src="/logo.c53f27ed.webp" alt="Finanza logo">
+            <a href="/"><img class="header__logo" src="/logo.c53f27ed.webp" alt="Finanza logo"></a>
             <nav class="header__navigation">
-                <a class="header__navigation__link" href="#">home</a>
-                <a class="header__navigation__link" href="#">about</a>
-                <a class="header__navigation__link" href="#">services</a>
-                <a class="header__navigation__link" href="#">pages</a>
-                <a class="header__navigation__link" href="#">contact</a>
+                <a class="header__navigation__link" href="/">home</a>
+                <a class="header__navigation__link" href="#about">about</a>
+                <a class="header__navigation__link" href="#services">services</a>
+                <a class="header__navigation__link" href="#pages">pages</a>
+                <a class="header__navigation__link" href="#contact">contact</a>
             </nav>
         </div>
     </header>
@@ -30,10 +30,10 @@
                 <h1 class="subheader__text-block__title">your financial status is our goal</h1>
                 <button class="subheader__text-block__button">explore more</button>
             </div>
-            <img class="subheader__img" src="/speaker.33fb5ee6.webp" alt="speaker">
+            <img class="subheader__img" src="/speaker.33fb5ee6.webp" alt="speaker" loading="lazy">
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="container about__container">
             <img src="/office-clerk.6db5d767.webp" alt="office-clerk">
             <div class="about__text-block">
@@ -92,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
         <div class="container services__container">
             <button class="services__fake-button">our services</button>
             <h2 class="services__title">awesome financial services for business</h2>
@@ -111,29 +111,29 @@
             </div>
         </div>
     </section>
-    <section class="feedback">
+    <section id="contact" class="feedback">
         <div class="feedback-background"></div>
         <div class="container feedback__container">
-            <form class="feedback__form" action="#">
+            <form class="feedback__form" action="/">
                 <div class="feedback__form__container">
                     <h2 class="feedback__form__legend">request a call-back</h2>
                     <div class="feedback__form__input-wrapper">
-                        <input id="name" type="text" placeholder="Your Name">
-                        <label for="name"></label>
-                        <input id="number" type="number" placeholder="Your Phone">
-                        <label for="number"></label>
-                        <input id="email" type="email" placeholder="Your Email">
-                        <label for="email"></label>
-                        <input id="subject" type="text" placeholder="Your Subject">
-                        <label for="subject"></label>
+                        <input id="name-input" type="text" placeholder="Your Name" required="">
+                        <label for="name-input"></label>
+                        <input id="phone-input" type="text" placeholder="Your Phone" required="">
+                        <label for="phone-input"></label>
+                        <input id="email-input" type="email" placeholder="Your Email" required="">
+                        <label for="email-input"></label>
+                        <input id="subject-input" type="text" placeholder="Your Subject" required="">
+                        <label for="subject-input"></label>
                     </div>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required=""></textarea>
                     <button class="feedback__form__button" type="submit">submit now</button>
                 </div>
             </form>
         </div>
     </section>
-    <section class="team">
+    <section id="pages" class="team">
         <div class="container team__container">
             <div class="team__container__fake-button">our projects</div>
             <h2 class="team__container__title">exclusive team</h2>
@@ -142,27 +142,45 @@
                     <p class="team__container__cards-wrapper__card__name">kate winslet</p>
                     <img class="team__container__cards-wrapper__card__photo" src="/team-person1.54d9f290.webp" alt="team-person">
                     <div class="team__container__cards-wrapper__card__social">
-                        <p><img src="/fb-icon.f55261dd.svg" alt="facebook"></p>
-                        <p><img src="/tw_icon.3e7025e1.svg" alt="twitter"></p>
-                        <p><img src="/l-edin-icon.06d80f5d.svg" alt="linkedin"></p>
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="/fb-icon.f55261dd.svg" alt="facebook"></a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/" target="_blank"><img src="/tw_icon.3e7025e1.svg" alt="twitter"></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="/l-edin-icon.06d80f5d.svg" alt="linkedin"></a>
+                        </p>
                     </div>
                 </div>
                 <div class="team__container__cards-wrapper__card">
                     <p id="second-name" class="team__container__cards-wrapper__card__name">jac jacson</p>
                     <img class="team__container__cards-wrapper__card__photo" src="/team-person2.d48523f1.webp" alt="team-person">
                     <div class="team__container__cards-wrapper__card__social">
-                        <p><img src="/fb-icon.f55261dd.svg" alt="facebook"></p>
-                        <p><img src="/tw_icon.3e7025e1.svg" alt="twitter"></p>
-                        <p><img src="/l-edin-icon.06d80f5d.svg" alt="linkedin"></p>
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="/fb-icon.f55261dd.svg" alt="facebook"></a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/" target="_blank"><img src="/tw_icon.3e7025e1.svg" alt="twitter"></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="/l-edin-icon.06d80f5d.svg" alt="linkedin"></a>
+                        </p>
                     </div>
                 </div>
                 <div class="team__container__cards-wrapper__card">
                     <p class="team__container__cards-wrapper__card__name">doris jordan</p>
                     <img class="team__container__cards-wrapper__card__photo" src="/team-person3.2d38fa31.webp" alt="team-person">
                     <div class="team__container__cards-wrapper__card__social">
-                        <p><img src="/fb-icon.f55261dd.svg" alt="facebook"></p>
-                        <p><img src="/tw_icon.3e7025e1.svg" alt="twitter"></p>
-                        <p><img src="/l-edin-icon.06d80f5d.svg" alt="linkedin"></p>
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="/fb-icon.f55261dd.svg" alt="facebook"></a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/" target="_blank"><img src="/tw_icon.3e7025e1.svg" alt="twitter"></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="/l-edin-icon.06d80f5d.svg" alt="linkedin"></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -210,41 +228,39 @@
         <div class="container subfooter__container">
             <div class="subfooter__container__block">
                 <p class="subfooter__container__block__block-title">our office</p>
-                <p class="subfooter__container__block__block-address"><img src="/location.5f130504.svg" alt="location">123 Street, New York, USA</p>
-                <p class="subfooter__container__block__block-phone"><img src="/phone.76469247.svg" alt="phone">+012 345 67890</p>
-                <p class="subfooter__container__block__block-email"><img src="/email.ea6277c3.svg" alt="email">info@example.com</p>
+                <a href="https://www.google.com/maps/place/W+123rd+St,+New+York,+NY,+%D0%A1%D0%A8%D0%90/@40.8089442,-73.9544785,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f613438663b5:0xce20073c8862af08!8m2!3d40.8089442!4d-73.9522898" class="subfooter__container__block__block-address" target="_blank"><img src="/location.5f130504.svg" alt="location">123 Street, New York, USA</a>
+                <a href="tel:+012 345 67890" class="subfooter__container__block__block-phone" target="_blank"><img src="/phone.76469247.svg" alt="phone">+012 345 67890</a>
+                <a href="mailto:info@example.com" class="subfooter__container__block__block-email" target="_blank"><img src="/email.ea6277c3.svg" alt="email">info@example.com</a>
                 <div></div>
             </div>
             <div class="subfooter__container__block">
                 <p class="subfooter__container__block__block-title">services</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">financial planning</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">cash investment</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">financial consultancy</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">business loans</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">business analysis</p>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">financial planning</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">cash investment</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">financial consultancy</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">business loans</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">business analysis</a>
             </div>
             <div class="subfooter__container__block">
                 <p class="subfooter__container__block__block-title">quick links</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">about us</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">contact us</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">our services</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">terms & condition</p>
-                <p class="subfooter__container__block__block-item"><img src="/go.5d4a41e7.svg" alt="go">support</p>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">about us</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">contact us</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">our services</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">terms & condition</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="/go.5d4a41e7.svg" alt="go">support</a>
             </div>
             <div class="subfooter__container__block">
                 <p class="subfooter__container__block__block-title">newsletter</p>
                 <p class="subfooter__container__block__block-item">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                 <input id="subfooter-email-input" type="email" placeholder="your mail">
-                <label for="subfooter-email-input">
-                    <button class="subfooter__email-button" type="submit">SingUp</button>
-                </label>
+                <button class="subfooter__email-button" type="submit">SingUp</button>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container footer__container">
-            <p class="footer__container__rights">©Finaza, All Right Reserved.</p>
-            <p class="footer__container__info">Redesigned By Dreezar and Designed By HTML Codex</p>
+            <p class="footer__container__rights"><a href="#">© Finanza. All Right Reserved.</a></p>
+            <p class="footer__container__info"><a href="#">Redesigned By Dreezar and Designed By HTML Codex</a></p>
         </div>
     </footer>
 <script src="/Finanza.3464ddca.js"></script></body>

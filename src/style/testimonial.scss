@@ -1,5 +1,5 @@
 .testimonial {
-    margin-top: 140px;
+    @extend %section-margin-top;
     text-align: center;
     &__container {
         &__fake-button {
@@ -33,7 +33,7 @@
                     height: 43px;
                     margin: auto;
                     z-index: 1;
-                    background-color: #FFFFFF;
+                    background-color: $white-color;
                 }
                 &__comment {
                     font-family: 'Jost-Regular', sans-serif;
