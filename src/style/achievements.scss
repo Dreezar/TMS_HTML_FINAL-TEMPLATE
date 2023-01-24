@@ -3,23 +3,29 @@
     margin-top: 140px;
     height: 262px;
     &__container {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
+        // display: grid;
+        // grid-template-columns: repeat(4, auto);
+        display: flex;
+        justify-content: space-between;
         padding: 52px 0;
     }
     &__card {
         text-align: center;
         &__number {
             font-family: 'Poppins-Bold', sans-serif;
-            font-size: 56px;
-            line-height: 67px;
+            font-size: 3.5rem;
+            line-height: 4.119rem;
             padding: 12px 0;
             color: $white-color;
+            @media (max-width: 992px) {
+                font-size: calc(3.5rem/1.25);
+                line-height: calc(4.119rem/1.25);
+            }
         }
         &__text {
             font-family: 'Poppins-Regular', sans-serif;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 1.5rem;
             color: $white-color;
             text-transform: capitalize;
             &::after {
@@ -29,6 +35,10 @@
                 height: 1px;
                 background-color: $white-color;
                 margin: 12px auto 0;
+            }
+            @media (max-width: 992px) {
+                font-size: calc(1rem/1.25);
+                line-height: calc(1.5rem/1.25);
             }
         }
     }

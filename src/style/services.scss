@@ -7,14 +7,18 @@
     }
     &__title {
         font-family: 'Jost-Bold', sans-serif;
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 3rem;
+        line-height: 3.625rem;
         text-transform: capitalize;
         padding: 19px 0;
         color: $heading-color;
         max-width: 542px;
         margin: 22px auto 54px;
         text-align: center;
+        @media (max-width: 992px) {
+            font-size: calc(3rem/1.25);
+            line-height: calc(3.625rem/1.25);
+        }
     }
     &__content-wrapper {
         display: grid;
@@ -29,28 +33,40 @@
             max-width: 385px;
             &__title {
                 font-family: 'Jost-Bold', sans-serif;
-                font-size: 28px;
-                line-height: 34px;
+                font-size: 1.75rem;
+                line-height: 2.125rem;
                 color: $heading-color;
+                @media (max-width: 992px) {
+                    font-size: calc(1.75rem/1.25);
+                    line-height: calc(2.125rem/1.25);
+                }
             }
             &__main-text {
                 font-family: 'Poppins-Regular', sans-serif;
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 1rem;
+                line-height: 1.5rem;
                 color: $small-text-color;
                 margin: 32px 0;
+                @media (max-width: 992px) {
+                    font-size: calc(1rem/1.25);
+                    line-height: calc(1.5rem/1.25);
+                }
             }
             &__info-wrapper {
                 display: grid;
                 grid-row-gap: 17px;
                 &__item {
                     font-family: 'Poppins-Regular', sans-serif;
-                    font-size: 16px;
-                    line-height: 24px;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
                     color: $small-text-color;
                     text-transform: capitalize;
                     img {
                         margin-right: 10px;
+                    }
+                    @media (max-width: 992px) {
+                        font-size: calc(1rem/1.25);
+                        line-height: calc(1.5rem/1.25);
                     }
                 }
             }

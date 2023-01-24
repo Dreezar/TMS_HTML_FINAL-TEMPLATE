@@ -4,6 +4,17 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-column-gap: 3.5%;
+        img {
+            @media (max-width: 992px) {
+                max-width: 420px;
+            }
+            @media (max-width: 900px) {
+                max-width: 340px;
+            }
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
     }
     &__text-block {
         &__fake-button {
@@ -12,19 +23,27 @@
         }
         &__title {
             font-family: 'Jost-Bold', sans-serif;
-            font-size: 48px;
-            line-height: 58px;
+            font-size: 3rem;
+            line-height: 3.625rem;
             text-transform: capitalize;
             padding: 19px 0;
             color: $heading-color;
+            @media (max-width: 992px) {
+                font-size: calc(3rem/1.25);
+                line-height: calc(3.625rem/1.25);
+            }
         }
         &__main-text {
             font-family: 'Poppins-Regular', sans-serif;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 1.5rem;
             color: $small-text-color;
             &:last-child {
                 padding-top: 19px;
+            }
+            @media (max-width: 992px) {
+                font-size: calc(1rem/1.25);
+                line-height: calc(1.5rem/1.25);
             }
         }
     }
