@@ -9,11 +9,15 @@
         }
         &__title {
             font-family: 'Jost-Bold', sans-serif;
-            font-size: 48px;
-            line-height: 58px;
+            font-size: 3rem;
+            line-height: 3.625rem;
             text-transform: capitalize;
             color: $heading-color;
             margin: 30px 0 30px;
+            @media (max-width: 992px) {
+                font-size: calc(3rem/1.25);
+                line-height: calc(3.625rem/1.25);
+            }
         }
         &__items-wrapper {
             display: grid;
@@ -37,8 +41,8 @@
                 }
                 &__comment {
                     font-family: 'Jost-Regular', sans-serif;
-                    font-size: 12px;
-                    line-height: 20px;
+                    font-size: 0.75rem;
+                    line-height: 1.25rem;
                     border: 1px solid #909DE2;
                     padding: 32px 15px;
                     color: $small-text-color;
@@ -53,15 +57,15 @@
                     margin-top: 30px;
                     &__name {
                         font-family: 'Jost-Bold', sans-serif;
-                        font-size: 20px;
-                        line-height: 29px;
+                        font-size: 1.25rem;
+                        line-height: 1.8125rem;
                         text-transform: capitalize;
                         color: $heading-color;
                     }
                     &__profession {
                         font-family: 'Jost-Regular', sans-serif;
-                        font-size: 19px;
-                        line-height: 24px;
+                        font-size: 1.1875rem;
+                        line-height: 1.5rem;
                         text-transform: capitalize;
                         color: $small-text-color;
                     }

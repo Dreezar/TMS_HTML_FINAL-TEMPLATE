@@ -4,7 +4,7 @@
     padding: 57px 0 32px;
     &__container {
         display: grid;
-        grid-template-columns: repeat(4, 21%);
+        grid-template-columns: repeat(4, 24%);
         grid-column-gap: 15px;
         justify-content: center;
         &__block {
@@ -13,9 +13,13 @@
             position: relative;
             &__block-title {
                 font-family: 'Jost-Bold', sans-serif;
-                font-size: 24px;
-                line-height: 29px;
+                font-size: 1.5rem;
+                line-height: 1.8125rem;
                 text-transform: capitalize;
+                @media (max-width: 992px) {
+                    font-size: calc(1.5rem/1.25);
+                    line-height: calc(1.8125rem/1.25);
+                }
             }
             &__block-address {
                 @extend %Jost-Regular;
@@ -43,13 +47,17 @@
             }
             &__block-item {
                 font-family: 'OpenSans-Regular', sans-serif;
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 1rem;
+                line-height: 1.5rem;
                 text-transform: capitalize;
                 color: $white-color;
                 text-decoration: none;
                 img {
                     padding-right: 5px;
+                }
+                @media (max-width: 992px) {
+                    font-size: calc(1rem/1.25);
+                    line-height: calc(1.5rem/1.25);
                 }
             }
         }

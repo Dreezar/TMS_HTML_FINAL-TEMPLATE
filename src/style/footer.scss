@@ -7,20 +7,28 @@
         padding: 32px 0;
         &__rights {
             font-family: 'OpenSans-Bold', sans-serif;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 1.5rem;
             a {
                 text-decoration: none;
                 color: $white-color;
             }
+            @media (max-width: 992px) {
+                font-size: calc(1rem/1.25);
+                line-height: calc(1.5rem/1.25);
+            }
         }
         &__info {
             font-family: 'OpenSans-Bold', sans-serif;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 1.5rem;
             a {
                 text-decoration: none;
                 color: $white-color;
+            }
+            @media (max-width: 992px) {
+                font-size: calc(1rem/1.25);
+                line-height: calc(1.5rem/1.25);
             }
         }
     }

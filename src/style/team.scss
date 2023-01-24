@@ -8,18 +8,28 @@
         }
         &__title {
             font-family: 'Jost-Bold', sans-serif;
-            font-size: 48px;
-            line-height: 58px;
+            font-size: 3rem;
+            line-height: 3.625rem;
             text-transform: capitalize;
             color: $heading-color;
             text-align: center;
             margin: 30px 0 79px;
+            @media (max-width: 992px) {
+                font-size: calc(3rem/1.25);
+                line-height: calc(3.625rem/1.25);
+            }
         }
         &__cards-wrapper {
             display: grid;
             grid-template-columns: repeat(3, 282px);
             grid-column-gap: 7%;
             justify-content: center;
+            @media (max-width: 992px) {
+                grid-column-gap: 1%;
+            }
+            @media (max-width: 900px) {
+                display: block;
+            }
             &__card {
                 height: 490px;
                 border: 1px solid #909DE2;
@@ -33,16 +43,27 @@
                 }
                 &__name {
                     font-family: 'Jost-Bold', sans-serif;
-                    font-size: 24px;
-                    line-height: 29px;
+                    font-size: 1.5rem;
+                    line-height: 1.8125rem;
                     text-transform: capitalize;
                     color: $heading-color;
                     margin: 16px 0;
+                    @media (max-width: 992px) {
+                        font-size: calc(1.5rem/1.25);
+                        line-height: calc(1.8125rem/1.25);
+                    }
                 }
                 &__photo {
                     margin-top: 38px;
                     margin-bottom: 14px;
                     transform: scale(1.25);
+                    @media (max-width: 1200px) {
+                        transform: scale(1);
+                        margin: 0;
+                    }
+                    @media (max-width: 900px) {
+                        display: none;
+                    }
                 }
                 &__social {
                     margin-top: 40px;
@@ -56,6 +77,19 @@
                         border-radius: 50%;
                         padding: 14px;
                         margin: 14px 5px;
+                    }
+                    @media (max-width: 1200px) {
+                        margin-top: 25px;
+                    }
+                }
+                @media (max-width: 1200px) {
+                    height: 430px;
+                }
+                @media (max-width: 900px) {
+                    height: 120px;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
                     }
                 }
             }
