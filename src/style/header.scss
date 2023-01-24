@@ -1,0 +1,29 @@
+.header {
+    padding-top: 30px;
+    &__container {
+        // display: grid;
+        // grid-template-columns: 167px 35%;
+        // grid-column-gap: 51.5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__navigation {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-column-gap: 20px;
+        text-align: center;
+        &__link {
+            font-family: 'Poppins-Bold', sans-serif;
+            font-size: 1rem;
+            line-height: 3rem;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: $main-color;
+            @extend %blue-link-hover;
+            @media (max-width: 992px) {
+                font-size: calc(1rem/1.25);
+                line-height: calc(3rem/1.25);
+            }
+        }
+    }
+}

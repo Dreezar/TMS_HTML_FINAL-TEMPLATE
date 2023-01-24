@@ -1,0 +1,81 @@
+.feedback-background {
+    margin-top: 95px;
+    background: url(../images/blue-line.png);
+    height: 346px;
+}
+
+.feedback {
+    &__container {
+        position: relative;
+    }
+    &__form {
+        position: absolute;
+        top: -230px;
+        left: calc((100% - 719px)/2);
+        border: 1px solid #909DE2;
+        border-radius: 10px;
+        background-color: $white-color;
+        height: 524px;
+        width: 719px; //?
+        @media (max-width: 745px) {
+            // width: 300px;
+        }
+        &__container {
+            width: min(100% - 99px, 619px);
+            margin: 50px auto;
+            display: grid;
+            gap: 20px;
+            @extend %inp-placeholder;
+        }
+        &__legend {
+            font-family: 'Jost-Bold', sans-serif;
+            font-size: 3rem;
+            line-height: 3.625rem;
+            text-transform: capitalize;
+            text-align: center;
+            color: $heading-color;
+            @media (max-width: 992px) {
+                font-size: calc(3rem/1.25);
+                line-height: calc(3.625rem/1.25);
+            }
+        }
+        &__input-wrapper {
+            display: grid;
+            grid-template-areas: "name-input email-input" "number-input subject-input";
+            // @media (max-width: 745px) {
+            //     grid-template-areas: "name-input" "email-input" "number-input" "subject-input";
+            // }
+        }
+        #name-input {
+            @extend %inp-set;
+            grid-area: name-input;
+            margin-bottom: 20px;
+        }
+        #phone-input {
+            @extend %inp-set;
+            grid-area: number-input;
+        }
+        #email-input {
+            @extend %inp-set;
+            grid-area: email-input;
+            margin-bottom: 20px;
+        }
+        #subject-input {
+            @extend %inp-set;
+            grid-area: subject-input;
+        }
+        #message {
+            font-family: 'OpenSans-Regular', sans-serif;
+            height: 132px;
+            background: $white-color;
+            border: 1px solid #909DE2;
+            border-radius: 10px;
+            resize: none;
+        }
+        &__button {
+            @extend %explore-more-button;
+            @extend %blue-button-hover;
+            height: 49px;
+        }
+    }
+}

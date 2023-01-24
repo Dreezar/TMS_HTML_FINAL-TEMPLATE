@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(100% - 144px, 1100px);
+    margin: auto;
+}
+
+//Colors
+$main-color: #355EFC;
+$heading-color: #011A41;
+$small-text-color: #555555;
+$white-color: #FFFFFF;
+//
+%fake-button {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 42px;
+    text-transform: capitalize;
+    color: $main-color;
+    border: 1px solid #CAD2FC;
+    box-shadow: (0px 0px 4px rgba(0, 0, 0, 0.36));
+    border-radius: 11px;
+    height: 42px;
+    text-align: center;
+    cursor: default;
+    background-color: $white-color;
+}
+
+%explore-more-button {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #F5F5F5;
+    background-color: $main-color;
+}
+
+%reasons-card-title {
+    font-family: 'Jost-Bold', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    padding: 18px 0;
+    color: $white-color;
+}
+
+%inp-set {
+    height: 52px;
+    max-width: 300px;
+    background: $white-color;
+    border: 1px solid #909DE2;
+    border-radius: 10px;
+}
+
+%inp-placeholder {
+     ::placeholder {
+        font-family: 'Open Sans-Regular', sans-serif;
+        font-size: 16px;
+        padding: 14px 0 14px 10px;
+    }
+}
+
+%read-more-link {
+    display: block;
+    font-family: 'Poppins-regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-top: 18px;
+}
+
+%small-main-text {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $small-text-color;
+}
+
+%Jost-Regular {
+    font-family: 'Jost-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+%OpenSans-Regular {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+%section-margin-top {
+    margin-top: 140px;
+}
+
+%blue-link-hover {
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:focus {
+        color: #949dff;
+    }
+}
+
+%blue-button-hover {
+    &:hover {
+        background-color: #2954ffd9;
+    }
+}

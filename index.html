@@ -7,10 +7,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finanza</title>
     <link rel="stylesheet" href="./src/style/index.scss">
+    <script src="https://unpkg.com/spacingjs" defer></script>
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container header__container">
+            <a href="/"><img class="header__logo" src="./src/images/logo.webp" alt="Finanza logo"></a>
+            <nav class="header__navigation">
+                <a class="header__navigation__link" href="/">home</a>
+                <a class="header__navigation__link" href="#about">about</a>
+                <a class="header__navigation__link" href="#services">services</a>
+                <a class="header__navigation__link" href="#pages">pages</a>
+                <a class="header__navigation__link" href="#contact">contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="subheader">
+        <div class="container subheader__container">
+            <div class="subheader__text-block">
+                <p class="subheader__text-block__welcome-text">Welcome to Finanza</p>
+                <h1 class="subheader__text-block__title">your financial status is our goal</h1>
+                <button class="subheader__text-block__button">explore more</button>
+            </div>
+            <img class="subheader__img" src="./src/images/speaker.webp" alt="speaker" loading="lazy">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container about__container">
+            <img src="./src/images/office-clerk.webp" alt="office-clerk">
+            <div class="about__text-block">
+                <div class="about__text-block__fake-button">about us</div>
+                <h2 class="about__text-block__title">we help our clients to grow their business</h2>
+                <p class="about__text-block__main-text">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <p class="about__text-block__main-text">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            </div>
+        </div>
+    </section>
+    <section class="achievements">
+        <div class="container achievements__container">
+            <div class="achievements__card">
+                <img src="./src/images/icons/clients.svg" alt="happy-clients-icon">
+                <p class="achievements__card__number">1566</p>
+                <p class="achievements__card__text">happy clients</p>
+            </div>
+            <div class="achievements__card">
+                <img src="./src/images/icons/projects.svg" alt="projects-icon">
+                <p class="achievements__card__number">1570</p>
+                <p class="achievements__card__text">projects completed</p>
+            </div>
+            <div class="achievements__card">
+                <img src="./src/images/icons/staff.svg" alt="staff-icon">
+                <p class="achievements__card__number">436</p>
+                <p class="achievements__card__text">dedicated staff</p>
+            </div>
+            <div class="achievements__card">
+                <img src="./src/images/icons/achievements.svg" alt="achievements-icon">
+                <p class="achievements__card__number">39</p>
+                <p class="achievements__card__text">achievements</p>
+            </div>
+        </div>
+    </section>
+    <section class="reasons">
+        <div class="container reasons__container">
+            <div class="reasons__text-block">
+                <div class="reasons__text-block__fake-button">why choosing us!</div>
+                <h2 class="reasons__text-block__title">few reasons why people choosing us!</h2>
+                <p class="reasons__text-block__main-text">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <button class="reasons__text-block__button">explore more</button>
+            </div>
+            <div class="reasons__card-wrapper">
+                <div class="reasons__card-blue">
+                    <img class="reasons__card-blue__icon" src="./src/images/icons/check-mark-white.svg" alt="check-mark-white">
+                    <p class="reasons__card-blue__card-title">fast executions</p>
+                    <p class="reasons__card-blue__card-main-text">Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
+                    <a class="reasons__card-blue__link" href="#">read more</a>
+                </div>
+                <div class="reasons__card-white">
+                    <img class="reasons__icon" src="./src/images/icons/check-mark-blue.svg" alt="check-mark-blue">
+                    <p class="reasons__card-white__card-title">fast executions</p>
+                    <p class="reasons__card-white__card-main-text">Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
+                    <a class="reasons__card-white__link" href="#">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container services__container">
+            <button class="services__fake-button">our services</button>
+            <h2 class="services__title">awesome financial services for business</h2>
+            <div class="services__content-wrapper">
+                <img class="services__content-wrapper__img" src="./src/images/services-people.webp" alt="staff image">
+                <div class="services__content-wrapper__text-block">
+                    <h3 class="services__content-wrapper__text-block__title">25 years of experience in financial support</h3>
+                    <p class="services__content-wrapper__text-block__main-text">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet </p>
+                    <div class="services__content-wrapper__text-block__info-wrapper">
+                        <p class="services__content-wrapper__text-block__info-wrapper__item"><img src="./src/images/icons/check-mark-small-blue.svg" alt="check-mark">secured loans</p>
+                        <p class="services__content-wrapper__text-block__info-wrapper__item"><img src="./src/images/icons/check-mark-small-blue.svg" alt="check-mark">credit facilities</p>
+                        <p class="services__content-wrapper__text-block__info-wrapper__item"><img src="./src/images/icons/check-mark-small-blue.svg" alt="check-mark">cash advanced</p>
+                    </div>
+                    <button class="services__content-wrapper__text-block__button">read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="feedback">
+        <div class="feedback-background"></div>
+        <div class="container feedback__container">
+            <form class="feedback__form" action="/">
+                <div class="feedback__form__container">
+                    <h2 class="feedback__form__legend">request a call-back</h2>
+                    <div class="feedback__form__input-wrapper">
+                        <input id="name-input" type="text" placeholder="Your Name" required>
+                        <label for="name-input"></label>
+                        <input id="phone-input" type="text" placeholder="Your Phone" required>
+                        <label for="phone-input"></label>
+                        <input id="email-input" type="email" placeholder="Your Email" required>
+                        <label for="email-input"></label>
+                        <input id="subject-input" type="text" placeholder="Your Subject" required>
+                        <label for="subject-input"></label>
+                    </div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <button class="feedback__form__button" type="submit">submit now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="pages" class="team">
+        <div class="container team__container">
+            <div class="team__container__fake-button">our projects</div>
+            <h2 class="team__container__title">exclusive team</h2>
+            <div class="team__container__cards-wrapper">
+                <div class="team__container__cards-wrapper__card">
+                    <p class="team__container__cards-wrapper__card__name">kate winslet</p>
+                    <img class="team__container__cards-wrapper__card__photo" src="./src/images/team-person1.webp" alt="team-person">
+                    <div class="team__container__cards-wrapper__card__social">
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./src/images/icons/fb-icon.svg" alt="facebook"></a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/" target="_blank"><img src="./src/images/icons/tw_icon.svg" alt="twitter"></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="./src/images/icons/l-edin-icon.svg" alt="linkedin"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="team__container__cards-wrapper__card">
+                    <p id="second-name" class="team__container__cards-wrapper__card__name">jac jacson</p>
+                    <img class="team__container__cards-wrapper__card__photo" src="./src/images/team-person2.webp" alt="team-person">
+                    <div class="team__container__cards-wrapper__card__social">
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./src/images/icons/fb-icon.svg" alt="facebook"></a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/" target="_blank"><img src="./src/images/icons/tw_icon.svg" alt="twitter"></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="./src/images/icons/l-edin-icon.svg" alt="linkedin"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="team__container__cards-wrapper__card">
+                    <p class="team__container__cards-wrapper__card__name">doris jordan</p>
+                    <img class="team__container__cards-wrapper__card__photo" src="./src/images/team-person3.webp" alt="team-person">
+                    <div class="team__container__cards-wrapper__card__social">
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./src/images/icons/fb-icon.svg" alt="facebook"></a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/" target="_blank"><img src="./src/images/icons/tw_icon.svg" alt="twitter"></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="./src/images/icons/l-edin-icon.svg" alt="linkedin"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+        <div class="container testimonial__container">
+            <div class="testimonial__container__fake-button">testimonial</div>
+            <h2 class="testimonial__container__title">what our clients say!</h2>
+            <div class="testimonial__container__items-wrapper">
+                <div class="testimonial__container__items-wrapper__item">
+                    <p class="testimonial__container__items-wrapper__item__icon-wrapper"><img class="testimonial__container__items-wrapper__item__icon" src="./src/images/icons/quotes.svg" alt="quotes"></p>
+                    <p class="testimonial__container__items-wrapper__item__comment">Lorem ipsum dolor sit amet consectetur. Fermentum aenean nunc eget posuere elit in curabitur nibh. Scelerisque pellentesque felis quis elementum accumsan eget.Lorem ipsum </p>
+                    <span><img src="./src/images/icons/comment-line.svg" alt="#"></span>
+                    <div class="testimonial__container__items-wrapper__item__person">
+                        <img class="testimonial__container__items-wrapper__item__person__photo" src="./src/images/client1.webp" alt="client">
+                        <p class="testimonial__container__items-wrapper__item__person__name">client name</p>
+                        <p class="testimonial__container__items-wrapper__item__person__profession">profession</p>
+                    </div>
+                </div>
+                <div class="testimonial__container__items-wrapper__item">
+                    <p class="testimonial__container__items-wrapper__item__icon-wrapper"><img class="testimonial__container__items-wrapper__item__icon" src="./src/images/icons/quotes.svg" alt="quotes"></p>
+                    <p class="testimonial__container__items-wrapper__item__comment">Lorem ipsum dolor sit amet consectetur. Fermentum aenean nunc eget posuere elit in curabitur nibh. Scelerisque pellentesque felis quis elementum accumsan eget.Lorem ipsum </p>
+                    <span><img src="./src/images/icons/comment-line.svg" alt="#"></span>
+                    <div class="testimonial__container__items-wrapper__item__person">
+                        <img class="testimonial__container__items-wrapper__item__person__photo" src="./src/images/client2.webp" alt="client">
+                        <p class="testimonial__container__items-wrapper__item__person__name">client name</p>
+                        <p class="testimonial__container__items-wrapper__item__person__profession">profession</p>
+                    </div>
+                </div>
+                <div class="testimonial__container__items-wrapper__item">
+                    <p class="testimonial__container__items-wrapper__item__icon-wrapper"><img class="testimonial__container__items-wrapper__item__icon" src="./src/images/icons/quotes.svg" alt="quotes"></p>
+                    <p class="testimonial__container__items-wrapper__item__comment">Lorem ipsum dolor sit amet consectetur. Fermentum aenean nunc eget posuere elit in curabitur nibh. Scelerisque pellentesque felis quis elementum accumsan eget.Lorem ipsum </p>
+                    <span><img src="./src/images/icons/comment-line.svg" alt="#"></span>
+                    <div class="testimonial__container__items-wrapper__item__person">
+                        <img class="testimonial__container__items-wrapper__item__person__photo" src="./src/images/client3.webp" alt="client">
+                        <p class="testimonial__container__items-wrapper__item__person__name">client name</p>
+                        <p class="testimonial__container__items-wrapper__item__person__profession">profession</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subfooter">
+        <div class="container subfooter__container">
+            <div class="subfooter__container__block">
+                <p class="subfooter__container__block__block-title">our office</p>
+                <a href="https://www.google.com/maps/place/W+123rd+St,+New+York,+NY,+%D0%A1%D0%A8%D0%90/@40.8089442,-73.9544785,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f613438663b5:0xce20073c8862af08!8m2!3d40.8089442!4d-73.9522898" class="subfooter__container__block__block-address"
+                    target="_blank"><img src="./src/images/icons/location.svg" alt="location">123 Street, New York, USA</a>
+                <a href="tel:+012 345 67890" class="subfooter__container__block__block-phone" target="_blank"><img src="./src/images/icons/phone.svg" alt="phone">+012 345 67890</a>
+                <a href="mailto:info@example.com" class="subfooter__container__block__block-email" target="_blank"><img src="./src/images/icons/email.svg" alt="email">info@example.com</a>
+                <div></div>
+            </div>
+            <div class="subfooter__container__block">
+                <p class="subfooter__container__block__block-title">services</p>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">financial planning</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">cash investment</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">financial consultancy</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">business loans</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">business analysis</a>
+            </div>
+            <div class="subfooter__container__block">
+                <p class="subfooter__container__block__block-title">quick links</p>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">about us</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">contact us</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">our services</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">terms & condition</a>
+                <a href="#" class="subfooter__container__block__block-item" target="_blank"><img src="./src/images/icons/go.svg" alt="go">support</a>
+            </div>
+            <div class="subfooter__container__block">
+                <p class="subfooter__container__block__block-title">newsletter</p>
+                <p class="subfooter__container__block__block-item">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <input id="subfooter-email-input" type="email" placeholder="your mail">
+                <button class="subfooter__email-button" type="submit">SingUp</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__container__rights"><a href="#">© Finanza. All Right Reserved.</a></p>
+            <p class="footer__container__info"><a href="#">Redesigned By Dreezar and Designed By HTML Codex</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

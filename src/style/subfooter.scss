@@ -1,0 +1,84 @@
+.subfooter {
+    background-color: #011A41;
+    color: $white-color;
+    padding: 57px 0 32px;
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        grid-column-gap: 15px;
+        justify-content: center;
+        &__block {
+            display: grid;
+            row-gap: 11px;
+            position: relative;
+            &__block-title {
+                font-family: 'Jost-Bold', sans-serif;
+                font-size: 1.5rem;
+                line-height: 1.8125rem;
+                text-transform: capitalize;
+                @media (max-width: 992px) {
+                    font-size: calc(1.5rem/1.25);
+                    line-height: calc(1.8125rem/1.25);
+                }
+            }
+            &__block-address {
+                @extend %Jost-Regular;
+                color: $white-color;
+                text-decoration: none;
+                img {
+                    padding-right: 5px;
+                }
+            }
+            &__block-phone {
+                @extend %Jost-Regular;
+                color: $white-color;
+                text-decoration: none;
+                img {
+                    padding-right: 5px;
+                }
+            }
+            &__block-email {
+                @extend %Jost-Regular;
+                color: $white-color;
+                text-decoration: none;
+                img {
+                    padding-right: 5px;
+                }
+            }
+            &__block-item {
+                font-family: 'OpenSans-Regular', sans-serif;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                text-transform: capitalize;
+                color: $white-color;
+                text-decoration: none;
+                img {
+                    padding-right: 5px;
+                }
+                @media (max-width: 992px) {
+                    font-size: calc(1rem/1.25);
+                    line-height: calc(1.5rem/1.25);
+                }
+            }
+        }
+    }
+    #subfooter-email-input {
+        @extend %OpenSans-Regular;
+        &::placeholder {
+            text-transform: capitalize;
+            padding-left: 5px;
+        }
+        height: 53px;
+        border-radius: 5px;
+    }
+    &__email-button {
+        @extend %explore-more-button;
+        @extend %blue-button-hover;
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        bottom: 21px;
+        right: 4px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,114 @@
+.reasons {
+    @extend %section-margin-top;
+    &__container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 3.5%;
+    }
+    &__text-block {
+        &__fake-button {
+            @extend %fake-button;
+            width: 164px;
+        }
+        &__title {
+            font-family: 'Jost-Bold', sans-serif;
+            font-size: 3rem;
+            line-height: 3.625rem;
+            text-transform: capitalize;
+            padding: 19px 0;
+            color: $heading-color;
+            @media (max-width: 992px) {
+                font-size: calc(3rem/1.25);
+                line-height: calc(3.625rem/1.25);
+            }
+        }
+        &__main-text {
+            font-family: 'Poppins-Regular', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $small-text-color;
+            @media (max-width: 992px) {
+                font-size: calc(1rem/1.25);
+                line-height: calc(1.5rem/1.25);
+            }
+        }
+        &__button {
+            @extend %explore-more-button;
+            @extend %blue-button-hover;
+            margin: 20px 0;
+        }
+    }
+    &__card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 2.5%;
+        @media (max-width: 992px) {
+            position: relative;
+            display: block;
+            width: 400px;
+        }
+    }
+    &__card-blue {
+        background-color: $main-color;
+        width: 265px;
+        height: 262px;
+        border: 1px solid #909DE2;
+        border-radius: 15px;
+        padding: 20px 20px 31px 20px;
+        align-self: flex-end;
+        &__card-title {
+            @extend %reasons-card-title;
+        }
+        &__card-main-text {
+            @extend %small-main-text;
+            color: $white-color;
+        }
+        &__link {
+            @extend %read-more-link;
+            color: $white-color;
+            &::after {
+                content: url(../images/icons/arrow-back-white-icon.svg);
+                display: inline-block;
+                margin-left: 15px;
+                vertical-align: middle;
+            }
+        }
+        @media (max-width: 992px) {
+            width: 400px;
+            position: absolute;
+            &:hover {
+                z-index: 1;
+            }
+        }
+    }
+    &__card-white {
+        background-color: $white-color;
+        width: 265px;
+        height: 262px;
+        border: 1px solid #909DE2;
+        border-radius: 15px;
+        padding: 20px 20px 31px 20px;
+        &__card-title {
+            @extend %reasons-card-title;
+            color: $heading-color;
+        }
+        &__card-main-text {
+            @extend %small-main-text;
+        }
+        &__link {
+            @extend %read-more-link;
+            color: $main-color;
+            &::after {
+                content: url(../images/icons/arrow-back-blue-icon.svg);
+                display: inline-block;
+                margin-left: 15px;
+                vertical-align: middle;
+            }
+        }
+        @media (max-width: 992px) {
+            width: 400px;
+            position: absolute;
+            bottom: 0px;
+        }
+    }
+}

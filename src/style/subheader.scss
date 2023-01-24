@@ -1,0 +1,44 @@
+.subheader {
+    padding-top: 30px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text-block {
+        margin-top: 90px;
+        &__welcome-text {
+            font-family: 'Poppins-Regular', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $main-color;
+            @media (max-width: 992px) {
+                font-size: calc(1rem/1.25);
+                line-height: calc(1.5rem/1.25);
+            }
+        }
+        &__title {
+            font-family: 'OpenSans-Bold', sans-serif;
+            font-size: 5rem;
+            line-height: 6rem;
+            text-transform: capitalize;
+            color: $heading-color;
+            margin: 35px 0 25px;
+            @media (max-width: 992px) {
+                font-size: calc(5rem/1.25);
+                line-height: calc(6rem/1.25);
+            }
+        }
+        &__button {
+            @extend %explore-more-button;
+            @extend %blue-button-hover;
+        }
+    }
+    &__img {
+        width: 468px;
+        height: 411px;
+        margin-top: 149px;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
